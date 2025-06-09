@@ -7051,19 +7051,19 @@ local OnCommand = function(text)
 		local danum = Args[2] and tonumber(Args[2]) or 69; local meth = math.random(0, danum); Chat(tostring(meth))
 	elseif cm("manginasal") then
 		if not Saved.Map_MangInamo then
-			Notif("Loading...", "Please wait patiently..."); Saved.Map_MangInamo = loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/Init/Maps/MangInasal.txt"))()
+			Notif("Loading...", "Please wait patiently..."); Saved.Map_MangInamo = loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-/refs/heads/main/Init/Maps/MangInasal.txt"))()
 		end; LocTP(Saved.Map_MangInamo); Notif("OK", "Teleported to mang-inasal")
 	elseif cm("area51") then
 		if not Saved.Map_Area69 then
-			Notif("Loading...", "Please wait patiently..."); Saved.Map_Area69 = loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/Init/Maps/Area69.txt"))()
+			Notif("Loading...", "Please wait patiently..."); Saved.Map_Area69 = loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-/refs/heads/main/Init/Maps/Area69.txt"))()
 		end; LocTP(Saved.Map_Area69); Notif("OK", "Teleported to area51")
 	elseif cm("amongus") then
 		if not Saved.Map_Amogus then
-			Notif("Loading...", "Please wait patiently..."); Saved.Map_Amogus = loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/Init/Maps/AmongSUS.txt"))()
+			Notif("Loading...", "Please wait patiently..."); Saved.Map_Amogus = loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-/refs/heads/main/Init/Maps/AmongSUS.txt"))()
 		end; LocTP(Saved.Map_Amogus); Notif("OK", "Teleported to amogus")
 	elseif cm("mcdonalds") then
 		if not Saved.Map_Mcdonalds then
-			Notif("Loading...", "Please wait patiently..."); Saved.Map_Mcdonalds = loadstring(game:HttpGet("https://raw.githubusercontent.com/devguy100/PrizzLife/main/Init/Maps/Mcdonalds.txt"))()
+			Notif("Loading...", "Please wait patiently..."); Saved.Map_Mcdonalds = loadstring(game:HttpGet("https://raw.githubusercontent.com/owqn/-/refs/heads/main/Init/Maps/Mcdonalds.txt"))()
 		end; LocTP(Saved.Map_Mcdonalds); Notif("OK", "Teleported to mcdonalds")
 	elseif cm("minecraft") then
 		local Sky = Instance.new("Sky"); Sky.SkyboxUp = "http://www.roblox.com/asset/?id=3822392413"; Sky.MoonTextureId = "rbxassetid://1176450669"; Sky.SkyboxLf = "http://www.roblox.com/asset/?id=3822391866"
@@ -10386,7 +10386,7 @@ task.spawn(function()
 	end
 
 	Saved.PLINIT = Instance.new("ScreenGui");Saved.PLINIT.Name = "PLADMIN_INITIALS";Saved.PLINIT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui");Saved.PLINIT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-	local data1, data2 = loadstring(game:HttpGet('https://raw.githubusercontent.com/devguy100/PrizzLife/main/Init/PL_TEAM_GUI'))()
+	local data1, data2 = loadstring(game:HttpGet('https://raw.githubusercontent.com/owqn/-/refs/heads/main/Init/Maps/PL_TEAM_GUI.txt'))()
 	local TEAMs = data2; Saved.TeamFrame = data1
 	TEAMs.InmateButton.MouseButton1Click:Connect(function()
 		SavedPositions.AutoRe = nil; workspace.Remote.TeamEvent:FireServer("Bright orange")
